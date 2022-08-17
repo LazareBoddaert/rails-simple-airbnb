@@ -1,0 +1,18 @@
+<div>Map</div>
+<div>
+  <h3><%= @flat.name %></h3>
+  <p><%= @flat.address %></p>
+</div>
+
+<div>
+  <p><strong>Description</strong></p>
+  <p><%= @flat.description %></p>
+</div>
+
+<div>
+  <p><strong>Details</strong></p>
+  <p><i class="fa-solid fa-user-group"><%= @flat.number_of_guests %></i></p>
+  <p><i class="fa-solid fa-euro-sign"><%= @flat.price_per_night %></i></p>
+</div>
+
+<div><%= link_to 'Modify informations', edit_flat_path %></div>
